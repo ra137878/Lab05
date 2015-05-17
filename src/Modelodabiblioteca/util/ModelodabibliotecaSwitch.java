@@ -72,15 +72,29 @@ public class ModelodabibliotecaSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ModelodabibliotecaPackage.PUBLICAÇÃO: {
-				Publicação publicação = (Publicação)theEObject;
-				T result = casePublicação(publicação);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ModelodabibliotecaPackage.TERMINAL: {
 				Terminal terminal = (Terminal)theEObject;
 				T result = caseTerminal(terminal);
+				if (result == null) result = caseSistemaCadastro(terminal);
+				if (result == null) result = caseSistemaEmpréstimo(terminal);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ModelodabibliotecaPackage.SISTEMA_CADASTRO: {
+				SistemaCadastro sistemaCadastro = (SistemaCadastro)theEObject;
+				T result = caseSistemaCadastro(sistemaCadastro);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ModelodabibliotecaPackage.USUÁRIO: {
+				Usuário usuário = (Usuário)theEObject;
+				T result = caseUsuário(usuário);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ModelodabibliotecaPackage.PUBLICAÇÃO: {
+				Publicação publicação = (Publicação)theEObject;
+				T result = casePublicação(publicação);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -90,9 +104,9 @@ public class ModelodabibliotecaSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ModelodabibliotecaPackage.EMPRÉSTIMO: {
-				Empréstimo empréstimo = (Empréstimo)theEObject;
-				T result = caseEmpréstimo(empréstimo);
+			case ModelodabibliotecaPackage.SISTEMA_EMPRÉSTIMO: {
+				SistemaEmpréstimo sistemaEmpréstimo = (SistemaEmpréstimo)theEObject;
+				T result = caseSistemaEmpréstimo(sistemaEmpréstimo);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -124,12 +138,6 @@ public class ModelodabibliotecaSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ModelodabibliotecaPackage.USUÁRIO: {
-				Usuário usuário = (Usuário)theEObject;
-				T result = caseUsuário(usuário);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ModelodabibliotecaPackage.ALUNO: {
 				Aluno aluno = (Aluno)theEObject;
 				T result = caseAluno(aluno);
@@ -140,7 +148,31 @@ public class ModelodabibliotecaSwitch<T> extends Switch<T> {
 			case ModelodabibliotecaPackage.PROFESSOR: {
 				Professor professor = (Professor)theEObject;
 				T result = caseProfessor(professor);
+				if (result == null) result = caseFuncionário(professor);
 				if (result == null) result = caseUsuário(professor);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ModelodabibliotecaPackage.FUNCIONÁRIO: {
+				Funcionário funcionário = (Funcionário)theEObject;
+				T result = caseFuncionário(funcionário);
+				if (result == null) result = caseUsuário(funcionário);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ModelodabibliotecaPackage.ATENDENTE: {
+				Atendente atendente = (Atendente)theEObject;
+				T result = caseAtendente(atendente);
+				if (result == null) result = caseFuncionário(atendente);
+				if (result == null) result = caseUsuário(atendente);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ModelodabibliotecaPackage.BIBLIOTECÁRIA: {
+				Bibliotecária bibliotecária = (Bibliotecária)theEObject;
+				T result = caseBibliotecária(bibliotecária);
+				if (result == null) result = caseFuncionário(bibliotecária);
+				if (result == null) result = caseUsuário(bibliotecária);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -194,6 +226,21 @@ public class ModelodabibliotecaSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sistema Cadastro</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sistema Cadastro</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSistemaCadastro(SistemaCadastro object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Exemplar</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -209,17 +256,17 @@ public class ModelodabibliotecaSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Empréstimo</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Sistema Empréstimo</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Empréstimo</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Sistema Empréstimo</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEmpréstimo(Empréstimo object) {
+	public T caseSistemaEmpréstimo(SistemaEmpréstimo object) {
 		return null;
 	}
 
@@ -325,6 +372,51 @@ public class ModelodabibliotecaSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseProfessor(Professor object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Funcionário</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Funcionário</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFuncionário(Funcionário object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Atendente</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Atendente</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAtendente(Atendente object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Bibliotecária</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Bibliotecária</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBibliotecária(Bibliotecária object) {
 		return null;
 	}
 

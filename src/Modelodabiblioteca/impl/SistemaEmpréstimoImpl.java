@@ -4,27 +4,31 @@ package Modelodabiblioteca.impl;
 
 import Modelodabiblioteca.ModelodabibliotecaPackage;
 import Modelodabiblioteca.SistemaEmpréstimo;
-import Modelodabiblioteca.Terminal;
+
 import java.lang.reflect.InvocationTargetException;
+
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Terminal</b></em>'.
+ * An implementation of the model object '<em><b>Sistema Empréstimo</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class TerminalImpl extends SistemaCadastroImpl implements Terminal {
+public class SistemaEmpréstimoImpl extends MinimalEObjectImpl.Container implements SistemaEmpréstimo {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TerminalImpl() {
+	protected SistemaEmpréstimoImpl() {
 		super();
 	}
 
@@ -35,7 +39,7 @@ public class TerminalImpl extends SistemaCadastroImpl implements Terminal {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ModelodabibliotecaPackage.Literals.TERMINAL;
+		return ModelodabibliotecaPackage.Literals.SISTEMA_EMPRÉSTIMO;
 	}
 
 	/**
@@ -88,41 +92,22 @@ public class TerminalImpl extends SistemaCadastroImpl implements Terminal {
 	 * @generated
 	 */
 	@Override
-	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
-		if (baseClass == SistemaEmpréstimo.class) {
-			switch (baseOperationID) {
-				case ModelodabibliotecaPackage.SISTEMA_EMPRÉSTIMO___FAZER_RESERVA: return ModelodabibliotecaPackage.TERMINAL___FAZER_RESERVA;
-				case ModelodabibliotecaPackage.SISTEMA_EMPRÉSTIMO___CANCELAR_RESERVA: return ModelodabibliotecaPackage.TERMINAL___CANCELAR_RESERVA;
-				case ModelodabibliotecaPackage.SISTEMA_EMPRÉSTIMO___REALIZAR_EMPRESTIMO: return ModelodabibliotecaPackage.TERMINAL___REALIZAR_EMPRESTIMO;
-				case ModelodabibliotecaPackage.SISTEMA_EMPRÉSTIMO___DESFAZER_EMPRESTIMO: return ModelodabibliotecaPackage.TERMINAL___DESFAZER_EMPRESTIMO;
-				default: return -1;
-			}
-		}
-		return super.eDerivedOperationID(baseOperationID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ModelodabibliotecaPackage.TERMINAL___FAZER_RESERVA:
+			case ModelodabibliotecaPackage.SISTEMA_EMPRÉSTIMO___FAZER_RESERVA:
 				FazerReserva();
 				return null;
-			case ModelodabibliotecaPackage.TERMINAL___CANCELAR_RESERVA:
+			case ModelodabibliotecaPackage.SISTEMA_EMPRÉSTIMO___CANCELAR_RESERVA:
 				CancelarReserva();
 				return null;
-			case ModelodabibliotecaPackage.TERMINAL___REALIZAR_EMPRESTIMO:
+			case ModelodabibliotecaPackage.SISTEMA_EMPRÉSTIMO___REALIZAR_EMPRESTIMO:
 				RealizarEmprestimo();
 				return null;
-			case ModelodabibliotecaPackage.TERMINAL___DESFAZER_EMPRESTIMO:
+			case ModelodabibliotecaPackage.SISTEMA_EMPRÉSTIMO___DESFAZER_EMPRESTIMO:
 				DesfazerEmprestimo();
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);
 	}
 
-} //TerminalImpl
+} //SistemaEmpréstimoImpl

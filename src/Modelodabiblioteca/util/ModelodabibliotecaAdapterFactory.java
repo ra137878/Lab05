@@ -72,20 +72,28 @@ public class ModelodabibliotecaAdapterFactory extends AdapterFactoryImpl {
 				return createBibliotecaAdapter();
 			}
 			@Override
-			public Adapter casePublicação(Publicação object) {
-				return createPublicaçãoAdapter();
-			}
-			@Override
 			public Adapter caseTerminal(Terminal object) {
 				return createTerminalAdapter();
+			}
+			@Override
+			public Adapter caseSistemaCadastro(SistemaCadastro object) {
+				return createSistemaCadastroAdapter();
+			}
+			@Override
+			public Adapter caseUsuário(Usuário object) {
+				return createUsuárioAdapter();
+			}
+			@Override
+			public Adapter casePublicação(Publicação object) {
+				return createPublicaçãoAdapter();
 			}
 			@Override
 			public Adapter caseExemplar(Exemplar object) {
 				return createExemplarAdapter();
 			}
 			@Override
-			public Adapter caseEmpréstimo(Empréstimo object) {
-				return createEmpréstimoAdapter();
+			public Adapter caseSistemaEmpréstimo(SistemaEmpréstimo object) {
+				return createSistemaEmpréstimoAdapter();
 			}
 			@Override
 			public Adapter caseLivro(Livro object) {
@@ -104,16 +112,24 @@ public class ModelodabibliotecaAdapterFactory extends AdapterFactoryImpl {
 				return createManualAdapter();
 			}
 			@Override
-			public Adapter caseUsuário(Usuário object) {
-				return createUsuárioAdapter();
-			}
-			@Override
 			public Adapter caseAluno(Aluno object) {
 				return createAlunoAdapter();
 			}
 			@Override
 			public Adapter caseProfessor(Professor object) {
 				return createProfessorAdapter();
+			}
+			@Override
+			public Adapter caseFuncionário(Funcionário object) {
+				return createFuncionárioAdapter();
+			}
+			@Override
+			public Adapter caseAtendente(Atendente object) {
+				return createAtendenteAdapter();
+			}
+			@Override
+			public Adapter caseBibliotecária(Bibliotecária object) {
+				return createBibliotecáriaAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -178,6 +194,20 @@ public class ModelodabibliotecaAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Modelodabiblioteca.SistemaCadastro <em>Sistema Cadastro</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modelodabiblioteca.SistemaCadastro
+	 * @generated
+	 */
+	public Adapter createSistemaCadastroAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Modelodabiblioteca.Exemplar <em>Exemplar</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -192,16 +222,16 @@ public class ModelodabibliotecaAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Modelodabiblioteca.Empréstimo <em>Empréstimo</em>}'.
+	 * Creates a new adapter for an object of class '{@link Modelodabiblioteca.SistemaEmpréstimo <em>Sistema Empréstimo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Modelodabiblioteca.Empréstimo
+	 * @see Modelodabiblioteca.SistemaEmpréstimo
 	 * @generated
 	 */
-	public Adapter createEmpréstimoAdapter() {
+	public Adapter createSistemaEmpréstimoAdapter() {
 		return null;
 	}
 
@@ -300,6 +330,48 @@ public class ModelodabibliotecaAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createProfessorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modelodabiblioteca.Funcionário <em>Funcionário</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modelodabiblioteca.Funcionário
+	 * @generated
+	 */
+	public Adapter createFuncionárioAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modelodabiblioteca.Atendente <em>Atendente</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modelodabiblioteca.Atendente
+	 * @generated
+	 */
+	public Adapter createAtendenteAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modelodabiblioteca.Bibliotecária <em>Bibliotecária</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modelodabiblioteca.Bibliotecária
+	 * @generated
+	 */
+	public Adapter createBibliotecáriaAdapter() {
 		return null;
 	}
 

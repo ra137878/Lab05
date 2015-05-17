@@ -13,5 +13,21 @@ package Modelodabiblioteca;
  * @model
  * @generated
  */
-public interface Professor extends Usuário {
+public interface Professor extends Funcionário {
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void Bloquear();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void Desbloquear();
 } // Professor

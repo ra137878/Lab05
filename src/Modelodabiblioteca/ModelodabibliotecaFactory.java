@@ -49,6 +49,15 @@ public interface ModelodabibliotecaFactory extends EFactory {
 	Terminal createTerminal();
 
 	/**
+	 * Returns a new object of class '<em>Sistema Cadastro</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sistema Cadastro</em>'.
+	 * @generated
+	 */
+	SistemaCadastro createSistemaCadastro();
+
+	/**
 	 * Returns a new object of class '<em>Exemplar</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,13 +67,13 @@ public interface ModelodabibliotecaFactory extends EFactory {
 	Exemplar createExemplar();
 
 	/**
-	 * Returns a new object of class '<em>Empréstimo</em>'.
+	 * Returns a new object of class '<em>Sistema Empréstimo</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Empréstimo</em>'.
+	 * @return a new object of class '<em>Sistema Empréstimo</em>'.
 	 * @generated
 	 */
-	Empréstimo createEmpréstimo();
+	SistemaEmpréstimo createSistemaEmpréstimo();
 
 	/**
 	 * Returns a new object of class '<em>Livro</em>'.
@@ -128,6 +137,33 @@ public interface ModelodabibliotecaFactory extends EFactory {
 	 * @generated
 	 */
 	Professor createProfessor();
+
+	/**
+	 * Returns a new object of class '<em>Funcionário</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Funcionário</em>'.
+	 * @generated
+	 */
+	Funcionário createFuncionário();
+
+	/**
+	 * Returns a new object of class '<em>Atendente</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Atendente</em>'.
+	 * @generated
+	 */
+	Atendente createAtendente();
+
+	/**
+	 * Returns a new object of class '<em>Bibliotecária</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Bibliotecária</em>'.
+	 * @generated
+	 */
+	Bibliotecária createBibliotecária();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -57,17 +57,21 @@ public class ModelodabibliotecaFactoryImpl extends EFactoryImpl implements Model
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case ModelodabibliotecaPackage.BIBLIOTECA: return createBiblioteca();
-			case ModelodabibliotecaPackage.PUBLICAÇÃO: return createPublicação();
 			case ModelodabibliotecaPackage.TERMINAL: return createTerminal();
+			case ModelodabibliotecaPackage.SISTEMA_CADASTRO: return createSistemaCadastro();
+			case ModelodabibliotecaPackage.USUÁRIO: return createUsuário();
+			case ModelodabibliotecaPackage.PUBLICAÇÃO: return createPublicação();
 			case ModelodabibliotecaPackage.EXEMPLAR: return createExemplar();
-			case ModelodabibliotecaPackage.EMPRÉSTIMO: return createEmpréstimo();
+			case ModelodabibliotecaPackage.SISTEMA_EMPRÉSTIMO: return createSistemaEmpréstimo();
 			case ModelodabibliotecaPackage.LIVRO: return createLivro();
 			case ModelodabibliotecaPackage.PERIÓDICO: return createPeriódico();
 			case ModelodabibliotecaPackage.TESE: return createTese();
 			case ModelodabibliotecaPackage.MANUAL: return createManual();
-			case ModelodabibliotecaPackage.USUÁRIO: return createUsuário();
 			case ModelodabibliotecaPackage.ALUNO: return createAluno();
 			case ModelodabibliotecaPackage.PROFESSOR: return createProfessor();
+			case ModelodabibliotecaPackage.FUNCIONÁRIO: return createFuncionário();
+			case ModelodabibliotecaPackage.ATENDENTE: return createAtendente();
+			case ModelodabibliotecaPackage.BIBLIOTECÁRIA: return createBibliotecária();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -108,6 +112,16 @@ public class ModelodabibliotecaFactoryImpl extends EFactoryImpl implements Model
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public SistemaCadastro createSistemaCadastro() {
+		SistemaCadastroImpl sistemaCadastro = new SistemaCadastroImpl();
+		return sistemaCadastro;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Exemplar createExemplar() {
 		ExemplarImpl exemplar = new ExemplarImpl();
 		return exemplar;
@@ -118,9 +132,9 @@ public class ModelodabibliotecaFactoryImpl extends EFactoryImpl implements Model
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Empréstimo createEmpréstimo() {
-		EmpréstimoImpl empréstimo = new EmpréstimoImpl();
-		return empréstimo;
+	public SistemaEmpréstimo createSistemaEmpréstimo() {
+		SistemaEmpréstimoImpl sistemaEmpréstimo = new SistemaEmpréstimoImpl();
+		return sistemaEmpréstimo;
 	}
 
 	/**
@@ -191,6 +205,36 @@ public class ModelodabibliotecaFactoryImpl extends EFactoryImpl implements Model
 	public Professor createProfessor() {
 		ProfessorImpl professor = new ProfessorImpl();
 		return professor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Funcionário createFuncionário() {
+		FuncionárioImpl funcionário = new FuncionárioImpl();
+		return funcionário;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Atendente createAtendente() {
+		AtendenteImpl atendente = new AtendenteImpl();
+		return atendente;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Bibliotecária createBibliotecária() {
+		BibliotecáriaImpl bibliotecária = new BibliotecáriaImpl();
+		return bibliotecária;
 	}
 
 	/**

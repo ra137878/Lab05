@@ -2,7 +2,6 @@
  */
 package Modelodabiblioteca;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,5 +13,5 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Terminal extends EObject {
+public interface Terminal extends SistemaCadastro, SistemaEmpréstimo {
 } // Terminal
