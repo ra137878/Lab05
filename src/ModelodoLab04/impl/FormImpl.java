@@ -710,7 +710,7 @@ public class FormImpl extends MinimalEObjectImpl.Container implements Form {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void checkFields() {
+	public void CheckFields() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -928,7 +928,7 @@ public class FormImpl extends MinimalEObjectImpl.Container implements Form {
 				Submit();
 				return null;
 			case ModelodoLab04Package.FORM___CHECK_FIELDS:
-				checkFields();
+				CheckFields();
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

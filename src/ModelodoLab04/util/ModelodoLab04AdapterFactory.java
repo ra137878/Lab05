@@ -76,6 +76,10 @@ public class ModelodoLab04AdapterFactory extends AdapterFactoryImpl {
 				return createPrintAdapter();
 			}
 			@Override
+			public Adapter caseJLabel(JLabel object) {
+				return createJLabelAdapter();
+			}
+			@Override
 			public Adapter caseUser(User object) {
 				return createUserAdapter();
 			}
@@ -124,6 +128,20 @@ public class ModelodoLab04AdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPrintAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ModelodoLab04.JLabel <em>JLabel</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ModelodoLab04.JLabel
+	 * @generated
+	 */
+	public Adapter createJLabelAdapter() {
 		return null;
 	}
 

@@ -40,6 +40,15 @@ public interface ModelodoLab04Factory extends EFactory {
 	Print createPrint();
 
 	/**
+	 * Returns a new object of class '<em>JLabel</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>JLabel</em>'.
+	 * @generated
+	 */
+	JLabel createJLabel();
+
+	/**
 	 * Returns a new object of class '<em>User</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

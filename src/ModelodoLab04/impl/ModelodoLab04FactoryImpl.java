@@ -58,6 +58,7 @@ public class ModelodoLab04FactoryImpl extends EFactoryImpl implements ModelodoLa
 		switch (eClass.getClassifierID()) {
 			case ModelodoLab04Package.FORM: return createForm();
 			case ModelodoLab04Package.PRINT: return createPrint();
+			case ModelodoLab04Package.JLABEL: return createJLabel();
 			case ModelodoLab04Package.USER: return createUser();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -82,6 +83,16 @@ public class ModelodoLab04FactoryImpl extends EFactoryImpl implements ModelodoLa
 	public Print createPrint() {
 		PrintImpl print = new PrintImpl();
 		return print;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public JLabel createJLabel() {
+		JLabelImpl jLabel = new JLabelImpl();
+		return jLabel;
 	}
 
 	/**

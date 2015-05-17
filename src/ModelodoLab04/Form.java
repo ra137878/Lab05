@@ -439,6 +439,6 @@ public interface Form extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void checkFields();
+	void CheckFields();
 
 } // Form

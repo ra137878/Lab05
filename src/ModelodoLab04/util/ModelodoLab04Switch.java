@@ -75,6 +75,13 @@ public class ModelodoLab04Switch<T> extends Switch<T> {
 			case ModelodoLab04Package.PRINT: {
 				Print print = (Print)theEObject;
 				T result = casePrint(print);
+				if (result == null) result = caseJLabel(print);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ModelodoLab04Package.JLABEL: {
+				JLabel jLabel = (JLabel)theEObject;
+				T result = caseJLabel(jLabel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -115,6 +122,21 @@ public class ModelodoLab04Switch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePrint(Print object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>JLabel</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>JLabel</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseJLabel(JLabel object) {
 		return null;
 	}
 

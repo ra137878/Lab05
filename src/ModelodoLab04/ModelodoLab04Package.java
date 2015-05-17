@@ -240,6 +240,88 @@ public interface ModelodoLab04Package extends EPackage {
 	int FORM_OPERATION_COUNT = 2;
 
 	/**
+	 * The meta object id for the '{@link ModelodoLab04.impl.JLabelImpl <em>JLabel</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ModelodoLab04.impl.JLabelImpl
+	 * @see ModelodoLab04.impl.ModelodoLab04PackageImpl#getJLabel()
+	 * @generated
+	 */
+	int JLABEL = 2;
+
+	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JLABEL__FONT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Bounds</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JLABEL__BOUNDS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JLABEL__NAME = 2;
+
+	/**
+	 * The number of structural features of the '<em>JLabel</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JLABEL_FEATURE_COUNT = 3;
+
+	/**
+	 * The operation id for the '<em>Set Font</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JLABEL___SET_FONT = 0;
+
+	/**
+	 * The operation id for the '<em>Set Bounds</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JLABEL___SET_BOUNDS = 1;
+
+	/**
+	 * The operation id for the '<em>Set Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JLABEL___SET_NAME = 2;
+
+	/**
+	 * The number of operations of the '<em>JLabel</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JLABEL_OPERATION_COUNT = 3;
+
+	/**
 	 * The meta object id for the '{@link ModelodoLab04.impl.PrintImpl <em>Print</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -250,22 +332,193 @@ public interface ModelodoLab04Package extends EPackage {
 	int PRINT = 1;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__FONT = JLABEL__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Bounds</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__BOUNDS = JLABEL__BOUNDS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__NAME = JLABEL__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__TITLE = JLABEL_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>First Name</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__FIRST_NAME = JLABEL_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Last Name</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__LAST_NAME = JLABEL_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Date Birth</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__DATE_BIRTH = JLABEL_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Email</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__EMAIL = JLABEL_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>CPF</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__CPF = JLABEL_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Phone</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__PHONE = JLABEL_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Address1</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__ADDRESS1 = JLABEL_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Address2</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__ADDRESS2 = JLABEL_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>CEP</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__CEP = JLABEL_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>City</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__CITY = JLABEL_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>State</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__STATE = JLABEL_FEATURE_COUNT + 11;
+
+	/**
+	 * The feature id for the '<em><b>Country</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT__COUNTRY = JLABEL_FEATURE_COUNT + 12;
+
+	/**
 	 * The number of structural features of the '<em>Print</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRINT_FEATURE_COUNT = 0;
+	int PRINT_FEATURE_COUNT = JLABEL_FEATURE_COUNT + 13;
 
 	/**
-	 * The operation id for the '<em>Print</em>' operation.
+	 * The operation id for the '<em>Set Font</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRINT___PRINT = 0;
+	int PRINT___SET_FONT = JLABEL___SET_FONT;
+
+	/**
+	 * The operation id for the '<em>Set Bounds</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT___SET_BOUNDS = JLABEL___SET_BOUNDS;
+
+	/**
+	 * The operation id for the '<em>Set Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT___SET_NAME = JLABEL___SET_NAME;
+
+	/**
+	 * The operation id for the '<em>Print Form</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRINT___PRINT_FORM = JLABEL_OPERATION_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Print</em>' class.
@@ -274,7 +527,7 @@ public interface ModelodoLab04Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRINT_OPERATION_COUNT = 1;
+	int PRINT_OPERATION_COUNT = JLABEL_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link ModelodoLab04.impl.UserImpl <em>User</em>}' class.
@@ -284,7 +537,7 @@ public interface ModelodoLab04Package extends EPackage {
 	 * @see ModelodoLab04.impl.ModelodoLab04PackageImpl#getUser()
 	 * @generated
 	 */
-	int USER = 2;
+	int USER = 3;
 
 	/**
 	 * The feature id for the '<em><b>Form</b></em>' reference.
@@ -509,11 +762,11 @@ public interface ModelodoLab04Package extends EPackage {
 	EOperation getForm__Submit();
 
 	/**
-	 * Returns the meta object for the '{@link ModelodoLab04.Form#checkFields() <em>Check Fields</em>}' operation.
+	 * Returns the meta object for the '{@link ModelodoLab04.Form#CheckFields() <em>Check Fields</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Fields</em>' operation.
-	 * @see ModelodoLab04.Form#checkFields()
+	 * @see ModelodoLab04.Form#CheckFields()
 	 * @generated
 	 */
 	EOperation getForm__CheckFields();
@@ -529,14 +782,230 @@ public interface ModelodoLab04Package extends EPackage {
 	EClass getPrint();
 
 	/**
-	 * Returns the meta object for the '{@link ModelodoLab04.Print#Print() <em>Print</em>}' operation.
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getTitle <em>Title</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Print</em>' operation.
-	 * @see ModelodoLab04.Print#Print()
+	 * @return the meta object for the reference '<em>Title</em>'.
+	 * @see ModelodoLab04.Print#getTitle()
+	 * @see #getPrint()
 	 * @generated
 	 */
-	EOperation getPrint__Print();
+	EReference getPrint_Title();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getFirstName <em>First Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>First Name</em>'.
+	 * @see ModelodoLab04.Print#getFirstName()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_FirstName();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getLastName <em>Last Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Last Name</em>'.
+	 * @see ModelodoLab04.Print#getLastName()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_LastName();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getDateBirth <em>Date Birth</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Date Birth</em>'.
+	 * @see ModelodoLab04.Print#getDateBirth()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_DateBirth();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getEmail <em>Email</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Email</em>'.
+	 * @see ModelodoLab04.Print#getEmail()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_Email();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getCPF <em>CPF</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CPF</em>'.
+	 * @see ModelodoLab04.Print#getCPF()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_CPF();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getPhone <em>Phone</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Phone</em>'.
+	 * @see ModelodoLab04.Print#getPhone()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_Phone();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getAddress1 <em>Address1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Address1</em>'.
+	 * @see ModelodoLab04.Print#getAddress1()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_Address1();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getAddress2 <em>Address2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Address2</em>'.
+	 * @see ModelodoLab04.Print#getAddress2()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_Address2();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getCEP <em>CEP</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CEP</em>'.
+	 * @see ModelodoLab04.Print#getCEP()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_CEP();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getCity <em>City</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>City</em>'.
+	 * @see ModelodoLab04.Print#getCity()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_City();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getState <em>State</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>State</em>'.
+	 * @see ModelodoLab04.Print#getState()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_State();
+
+	/**
+	 * Returns the meta object for the reference '{@link ModelodoLab04.Print#getCountry <em>Country</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Country</em>'.
+	 * @see ModelodoLab04.Print#getCountry()
+	 * @see #getPrint()
+	 * @generated
+	 */
+	EReference getPrint_Country();
+
+	/**
+	 * Returns the meta object for the '{@link ModelodoLab04.Print#PrintForm() <em>Print Form</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Print Form</em>' operation.
+	 * @see ModelodoLab04.Print#PrintForm()
+	 * @generated
+	 */
+	EOperation getPrint__PrintForm();
+
+	/**
+	 * Returns the meta object for class '{@link ModelodoLab04.JLabel <em>JLabel</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>JLabel</em>'.
+	 * @see ModelodoLab04.JLabel
+	 * @generated
+	 */
+	EClass getJLabel();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ModelodoLab04.JLabel#getFont <em>Font</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Font</em>'.
+	 * @see ModelodoLab04.JLabel#getFont()
+	 * @see #getJLabel()
+	 * @generated
+	 */
+	EAttribute getJLabel_Font();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ModelodoLab04.JLabel#getBounds <em>Bounds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Bounds</em>'.
+	 * @see ModelodoLab04.JLabel#getBounds()
+	 * @see #getJLabel()
+	 * @generated
+	 */
+	EAttribute getJLabel_Bounds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ModelodoLab04.JLabel#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see ModelodoLab04.JLabel#getName()
+	 * @see #getJLabel()
+	 * @generated
+	 */
+	EAttribute getJLabel_Name();
+
+	/**
+	 * Returns the meta object for the '{@link ModelodoLab04.JLabel#setFont() <em>Set Font</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Font</em>' operation.
+	 * @see ModelodoLab04.JLabel#setFont()
+	 * @generated
+	 */
+	EOperation getJLabel__SetFont();
+
+	/**
+	 * Returns the meta object for the '{@link ModelodoLab04.JLabel#setBounds() <em>Set Bounds</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Bounds</em>' operation.
+	 * @see ModelodoLab04.JLabel#setBounds()
+	 * @generated
+	 */
+	EOperation getJLabel__SetBounds();
+
+	/**
+	 * Returns the meta object for the '{@link ModelodoLab04.JLabel#setName() <em>Set Name</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Name</em>' operation.
+	 * @see ModelodoLab04.JLabel#setName()
+	 * @generated
+	 */
+	EOperation getJLabel__SetName();
 
 	/**
 	 * Returns the meta object for class '{@link ModelodoLab04.User <em>User</em>}'.
@@ -750,12 +1219,174 @@ public interface ModelodoLab04Package extends EPackage {
 		EClass PRINT = eINSTANCE.getPrint();
 
 		/**
-		 * The meta object literal for the '<em><b>Print</b></em>' operation.
+		 * The meta object literal for the '<em><b>Title</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation PRINT___PRINT = eINSTANCE.getPrint__Print();
+		EReference PRINT__TITLE = eINSTANCE.getPrint_Title();
+
+		/**
+		 * The meta object literal for the '<em><b>First Name</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__FIRST_NAME = eINSTANCE.getPrint_FirstName();
+
+		/**
+		 * The meta object literal for the '<em><b>Last Name</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__LAST_NAME = eINSTANCE.getPrint_LastName();
+
+		/**
+		 * The meta object literal for the '<em><b>Date Birth</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__DATE_BIRTH = eINSTANCE.getPrint_DateBirth();
+
+		/**
+		 * The meta object literal for the '<em><b>Email</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__EMAIL = eINSTANCE.getPrint_Email();
+
+		/**
+		 * The meta object literal for the '<em><b>CPF</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__CPF = eINSTANCE.getPrint_CPF();
+
+		/**
+		 * The meta object literal for the '<em><b>Phone</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__PHONE = eINSTANCE.getPrint_Phone();
+
+		/**
+		 * The meta object literal for the '<em><b>Address1</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__ADDRESS1 = eINSTANCE.getPrint_Address1();
+
+		/**
+		 * The meta object literal for the '<em><b>Address2</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__ADDRESS2 = eINSTANCE.getPrint_Address2();
+
+		/**
+		 * The meta object literal for the '<em><b>CEP</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__CEP = eINSTANCE.getPrint_CEP();
+
+		/**
+		 * The meta object literal for the '<em><b>City</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__CITY = eINSTANCE.getPrint_City();
+
+		/**
+		 * The meta object literal for the '<em><b>State</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__STATE = eINSTANCE.getPrint_State();
+
+		/**
+		 * The meta object literal for the '<em><b>Country</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRINT__COUNTRY = eINSTANCE.getPrint_Country();
+
+		/**
+		 * The meta object literal for the '<em><b>Print Form</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation PRINT___PRINT_FORM = eINSTANCE.getPrint__PrintForm();
+
+		/**
+		 * The meta object literal for the '{@link ModelodoLab04.impl.JLabelImpl <em>JLabel</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ModelodoLab04.impl.JLabelImpl
+		 * @see ModelodoLab04.impl.ModelodoLab04PackageImpl#getJLabel()
+		 * @generated
+		 */
+		EClass JLABEL = eINSTANCE.getJLabel();
+
+		/**
+		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute JLABEL__FONT = eINSTANCE.getJLabel_Font();
+
+		/**
+		 * The meta object literal for the '<em><b>Bounds</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute JLABEL__BOUNDS = eINSTANCE.getJLabel_Bounds();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute JLABEL__NAME = eINSTANCE.getJLabel_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Font</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation JLABEL___SET_FONT = eINSTANCE.getJLabel__SetFont();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Bounds</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation JLABEL___SET_BOUNDS = eINSTANCE.getJLabel__SetBounds();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Name</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation JLABEL___SET_NAME = eINSTANCE.getJLabel__SetName();
 
 		/**
 		 * The meta object literal for the '{@link ModelodoLab04.impl.UserImpl <em>User</em>}' class.

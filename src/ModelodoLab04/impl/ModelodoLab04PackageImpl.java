@@ -3,6 +3,7 @@
 package ModelodoLab04.impl;
 
 import ModelodoLab04.Form;
+import ModelodoLab04.JLabel;
 import ModelodoLab04.ModelodoLab04Factory;
 import ModelodoLab04.ModelodoLab04Package;
 import ModelodoLab04.Print;
@@ -40,6 +41,13 @@ public class ModelodoLab04PackageImpl extends EPackageImpl implements ModelodoLa
 	 * @generated
 	 */
 	private EClass printEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass jLabelEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -290,8 +298,188 @@ public class ModelodoLab04PackageImpl extends EPackageImpl implements ModelodoLa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getPrint__Print() {
+	public EReference getPrint_Title() {
+		return (EReference)printEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_FirstName() {
+		return (EReference)printEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_LastName() {
+		return (EReference)printEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_DateBirth() {
+		return (EReference)printEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_Email() {
+		return (EReference)printEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_CPF() {
+		return (EReference)printEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_Phone() {
+		return (EReference)printEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_Address1() {
+		return (EReference)printEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_Address2() {
+		return (EReference)printEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_CEP() {
+		return (EReference)printEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_City() {
+		return (EReference)printEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_State() {
+		return (EReference)printEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPrint_Country() {
+		return (EReference)printEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getPrint__PrintForm() {
 		return printEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getJLabel() {
+		return jLabelEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getJLabel_Font() {
+		return (EAttribute)jLabelEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getJLabel_Bounds() {
+		return (EAttribute)jLabelEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getJLabel_Name() {
+		return (EAttribute)jLabelEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getJLabel__SetFont() {
+		return jLabelEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getJLabel__SetBounds() {
+		return jLabelEClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getJLabel__SetName() {
+		return jLabelEClass.getEOperations().get(2);
 	}
 
 	/**
@@ -369,7 +557,28 @@ public class ModelodoLab04PackageImpl extends EPackageImpl implements ModelodoLa
 		createEOperation(formEClass, FORM___CHECK_FIELDS);
 
 		printEClass = createEClass(PRINT);
-		createEOperation(printEClass, PRINT___PRINT);
+		createEReference(printEClass, PRINT__TITLE);
+		createEReference(printEClass, PRINT__FIRST_NAME);
+		createEReference(printEClass, PRINT__LAST_NAME);
+		createEReference(printEClass, PRINT__DATE_BIRTH);
+		createEReference(printEClass, PRINT__EMAIL);
+		createEReference(printEClass, PRINT__CPF);
+		createEReference(printEClass, PRINT__PHONE);
+		createEReference(printEClass, PRINT__ADDRESS1);
+		createEReference(printEClass, PRINT__ADDRESS2);
+		createEReference(printEClass, PRINT__CEP);
+		createEReference(printEClass, PRINT__CITY);
+		createEReference(printEClass, PRINT__STATE);
+		createEReference(printEClass, PRINT__COUNTRY);
+		createEOperation(printEClass, PRINT___PRINT_FORM);
+
+		jLabelEClass = createEClass(JLABEL);
+		createEAttribute(jLabelEClass, JLABEL__FONT);
+		createEAttribute(jLabelEClass, JLABEL__BOUNDS);
+		createEAttribute(jLabelEClass, JLABEL__NAME);
+		createEOperation(jLabelEClass, JLABEL___SET_FONT);
+		createEOperation(jLabelEClass, JLABEL___SET_BOUNDS);
+		createEOperation(jLabelEClass, JLABEL___SET_NAME);
 
 		userEClass = createEClass(USER);
 		createEReference(userEClass, USER__FORM);
@@ -407,6 +616,7 @@ public class ModelodoLab04PackageImpl extends EPackageImpl implements ModelodoLa
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		printEClass.getESuperTypes().add(this.getJLabel());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(formEClass, Form.class, "Form", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -428,11 +638,35 @@ public class ModelodoLab04PackageImpl extends EPackageImpl implements ModelodoLa
 
 		initEOperation(getForm__Submit(), null, "Submit", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getForm__CheckFields(), null, "checkFields", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getForm__CheckFields(), null, "CheckFields", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(printEClass, Print.class, "Print", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getPrint_Title(), this.getJLabel(), null, "Title", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_FirstName(), this.getJLabel(), null, "FirstName", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_LastName(), this.getJLabel(), null, "LastName", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_DateBirth(), this.getJLabel(), null, "DateBirth", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_Email(), this.getJLabel(), null, "Email", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_CPF(), this.getJLabel(), null, "CPF", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_Phone(), this.getJLabel(), null, "Phone", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_Address1(), this.getJLabel(), null, "Address1", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_Address2(), this.getJLabel(), null, "Address2", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_CEP(), this.getJLabel(), null, "CEP", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_City(), this.getJLabel(), null, "City", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_State(), this.getJLabel(), null, "State", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPrint_Country(), this.getJLabel(), null, "Country", null, 1, 1, Print.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEOperation(getPrint__Print(), null, "Print", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getPrint__PrintForm(), null, "PrintForm", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(jLabelEClass, JLabel.class, "JLabel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getJLabel_Font(), theTypesPackage.getString(), "Font", null, 1, 1, JLabel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJLabel_Bounds(), theTypesPackage.getInteger(), "Bounds", null, 1, 1, JLabel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJLabel_Name(), theTypesPackage.getString(), "Name", null, 1, 1, JLabel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEOperation(getJLabel__SetFont(), null, "setFont", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getJLabel__SetBounds(), null, "setBounds", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getJLabel__SetName(), null, "setName", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(userEClass, User.class, "User", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getUser_Form(), this.getForm(), null, "form", null, 1, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
